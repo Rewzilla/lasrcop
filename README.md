@@ -59,5 +59,11 @@ Session recordings can be found in the `/var/sessions` directory, organized by u
 asciinema play /var/sessions/john.doe/2023:07:31-11:03:35.cast
 ```
 
+Session statistics can be gathered with the included `stats.sh` script.  When run, it will generate a CSV file with information about number of users, number of sessions, and disk usage over time.  To use it, review the config settings at the top of the script and then simply run (as root)...
+
+```
+./stats.sh
+```
+
 # Credits
 HUGE thanks to the Asciinema team for such an amazing tool!  LASRCOP is nothing more than a small wrapper script for this already-incredible piece of software.  All credit to Asciinema for the heavy lift of session recording and replay.
